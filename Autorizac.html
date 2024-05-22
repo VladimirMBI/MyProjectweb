@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    <title>Авторизация</title>
+    <style>
+        body {
+            font-family: Playfair Display;
+        }
+        h1 {
+            font-weight: 700;
+            color: rgba(85, 252, 8, 0.719);
+        }
+        .btn-register {
+            background-color:rgb(103, 75, 156);
+            color: wheat;
+        }
+        .btn-register:hover {
+            background-color: rgb(37, 27, 128);
+            color: rgb(146, 207, 23);
+        }
+        .material-symbols-outlined {
+            color: rgb(9, 117, 193);
+            font-size: 24px;
+        }
+        .eye-icon {
+            color:rgb(137, 185, 215);
+            cursor: pointer;
+            font-size: 37px;
+            position: absolute;
+            top: 5px;
+            right: 10px;
+        }
+        .form-check-label {
+            color: aqua;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="/img/CoffeeBB.jpg" class="d-block w-100" alt="" />
+          <div class="carousel-caption d-none d-md-block">
+          </div>
+        </div>
+        
+        
+      
+    <div class="container-fluid info-block">
+        <div class="row">
+          <div class="col-md-2">
+            <img src="/img/logotip.png" class="img-fluid" alt="" />
+          </div>
+
+    <section class="col-4 mx-auto mt-5">
+        <h1 class="text-center">Авторизация</h1>
+        <form action="">
+          <div class="col-auto">
+           <div class="input-group mb-3">
+           <div class="input-group-prepend">
+             <div class="input-group-text">
+                <span class="material-symbols-outlined">
+                    account_circle
+                    </span>
+             </div>
+              </div>
+         
+          <input type="text" class="form-control form-control-lg"
+           placeholder="email" 
+           required 
+           autocomplete="email"
+           onfocus="this.placeholder=''"
+             onblur="this.placeholder='email'">
+                </div>
+           <div class="input-group mb-3">
+          <div class="input-group-prepend">
+          <div class="input-group-text">
+            <span class="material-symbols-outlined">
+            password
+            </span></div>
+               </div>
+               
+
+         <input type="password" class="form-control form-control-lg" 
+         placeholder="Введите Пароль" required minlength="3"
+         id="formPass">
+         
+         <span class="material-symbols-outlined eye-icon" onmousedown="formPass.type='text'; this.nextElementSibling.hidden=false; this.hidden=true;">visibility</span>
+
+            <span class="material-symbols-outlined eye-icon" hidden onmouseup="formPass.type='password'; this.previousElementSibling.hidden=false; this.hidden=true;">visibility_off</span>
+
+               </div>
+
+               <div class="form-group form-check mb-3">
+                <input type="checkbox" class="form-check-input" required>
+                <label class="form-check-label">Согласие на обработку персональных данных</label>
+              </div>
+                <input type="submit" value="Войти" class="btn btn-block btn-lg btn-register">
+        </form>    
+
+    </section>
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+
+    
+</body>
+</html>
